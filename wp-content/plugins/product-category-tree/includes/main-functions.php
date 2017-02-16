@@ -14,14 +14,22 @@ if (!function_exists('wcdc_action_enqueue_adminPluginPage_assets')) {
         wp_register_style('WCDCJqueryUi-style', WCDC_PLUGIN_URL . '/assets/css/jquery-ui.css');
         wp_enqueue_style('WCDCJqueryUi-style');
 
-        wp_register_style('WCDC-LightboxStyle', WCDC_PLUGIN_URL . '/assets/css/lightbox.css');
-        wp_enqueue_style('WCDC-LightboxStyle');
+        wp_register_style('WCDCJqueryUi-style', WCDC_PLUGIN_URL . '/assets/css/jquery-ui.css');
+        wp_enqueue_style('WCDCJqueryUi-style');
+
+        wp_register_style('WCDC-select2', WCDC_PLUGIN_URL . '/assets/css/select2.min.css');
+        wp_enqueue_style('WCDC-select2');
 
         wp_enqueue_script('jquery-ui-core');
         wp_register_script('WCDC-cuctomScript', WCDC_PLUGIN_URL . '/assets/js/admin-custom.js');
         wp_enqueue_script('WCDC-cuctomScript');
+
         wp_register_script('WCDC-LightboxScript', WCDC_PLUGIN_URL . '/assets/js/jquery.lightbox.js');
         wp_enqueue_script('WCDC-LightboxScript');
+
+        wp_register_script('WCDC-select2', WCDC_PLUGIN_URL . '/assets/js/select2.min.js');
+        wp_enqueue_script('WCDC-select2');
+        
         wp_localize_script('WCDC-cuctomScript', 'wcdc_ajaxScript', array('ajax_url' => admin_url('admin-ajax.php')));
     }
 
