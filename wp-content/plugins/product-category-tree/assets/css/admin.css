@@ -10,6 +10,7 @@ img.pro-notice{
 
 
 .wcdc-add-container {
+    display: none;
     background-color:#235a9b;
     color: rgb(255, 255, 255);
     padding: 50px;
