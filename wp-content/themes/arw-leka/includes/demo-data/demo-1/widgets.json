@@ -1,0 +1,242 @@
+{
+  "footer-col-2-home-7":{
+    "arexworks_widget_social-1":{
+      "title":"",
+      "classes":""
+    }
+  },
+  "footer-col-1-home-7":{
+    "text-1":{
+      "title":"",
+      "text":"<ul class=\"inline-list\">\r\n\t<li class=\"margin-left-0\"><span><i class=\"fa fa-phone padding-right-10\"><\/i><span>+84 868.8568<\/span><\/span><\/li>\r\n\t<li><span><i class=\"fa fa-clock-o padding-right-10\"><\/i><span>MON - SAT: 08 am - 17 pm<\/span><\/span><\/li>\r\n\t<li><span><i class=\"fa fa-envelope-o padding-right-10\"><\/i><a href=\"mailto:support@wpelite.com\">Support@wpelite.com<\/a><\/span><\/li>\r\n<\/ul>",
+      "filter":false,
+      "classes":""
+    },
+    "newslettersignupwidget-1":{
+      "title":"",
+      "text_before_form":"",
+      "text_after_form":"",
+      "filter":false,
+      "classes":"",
+      "ids":null
+    }
+  },
+  "sidebar-primary":{
+    "search-2":{
+      "title":""
+    },
+    "recent-posts-2":{
+      "title":"",
+      "number":5
+    },
+    "recent-comments-2":{
+      "title":"",
+      "number":5
+    },
+    "archives-2":{
+      "title":"",
+      "count":0,
+      "dropdown":0
+    },
+    "categories-2":{
+      "title":"",
+      "count":0,
+      "hierarchical":0,
+      "dropdown":0
+    },
+    "meta-2":{
+      "title":""
+    },
+    "woocommerce_product_categories-1":{
+      "title":"By Categories",
+      "orderby":"name",
+      "dropdown":0,
+      "count":0,
+      "hierarchical":"1",
+      "show_children_only":0,
+      "classes":"",
+      "ids":null
+    },
+    "woocommerce_layered_nav_filters-1":{
+      "title":"Active Filters",
+      "classes":"",
+      "ids":null
+    },
+    "woocommerce_layered_nav-1":{
+      "title":"Filter by Color",
+      "attribute":"color",
+      "display_type":"list",
+      "query_type":"and",
+      "classes":"",
+      "ids":null
+    },
+    "woocommerce_layered_nav-2":{
+      "title":"Filter by Size",
+      "attribute":"size",
+      "display_type":"list",
+      "query_type":"and",
+      "classes":"",
+      "ids":null
+    },
+    "woocommerce_price_filter-1":{
+      "title":"Filter by price",
+      "classes":"",
+      "ids":null
+    },
+    "yith-woocompare-widget-1":{
+      "title":"Compare",
+      "classes":"",
+      "ids":null
+    },
+    "woocommerce_product_tag_cloud-1":{
+      "title":"Product Tags",
+      "classes":"",
+      "ids":null
+    },
+    "text-2":{
+      "title":"",
+      "text":"<img src=\"http:\/\/lekawp.demo.arw.tf\/wp-content\/uploads\/2015\/10\/essential-banner-1.jpg\" alt=\"Banner\"\/>",
+      "filter":false,
+      "classes":""
+    },
+    "woocommerce_recently_viewed_products-1":{
+      "title":"Recently Viewed Products",
+      "number":"3",
+      "classes":"",
+      "ids":null
+    }
+  },
+  "sidebar-secondary":{
+    "search-3":{
+      "title":"Search",
+      "classes":"",
+      "ids":null
+    },
+    "woocommerce_widget_cart-1":{
+      "title":"Cart",
+      "hide_if_empty":0,
+      "classes":"",
+      "ids":null
+    },
+    "recent-posts-3":{
+      "title":"Recent Posts",
+      "number":3,
+      "show_date":true,
+      "classes":"",
+      "ids":null
+    },
+    "woocommerce_recent_reviews-1":{
+      "title":"Recent Reviews",
+      "number":"3",
+      "classes":"",
+      "ids":null
+    }
+  },
+  "shop-filter":{
+    "woocommerce_layered_nav-3":{
+      "title":"By Colors",
+      "attribute":"color",
+      "display_type":"list",
+      "query_type":"and",
+      "classes":"",
+      "ids":null
+    },
+    "woocommerce_price_filter-2":{
+      "title":"By Prices",
+      "classes":"",
+      "ids":null
+    }
+  },
+  "sidebar-essential":{
+    "text-3":{
+      "title":"",
+      "text":"<a href=\"#\">\r\n<img src=\"http:\/\/lekawp.demo.arw.tf\/wp-content\/uploads\/2015\/10\/essential-banner-1.jpg\" alt=\"Banner\"\/>\r\n<\/a>",
+      "filter":false,
+      "classes":"",
+      "ids":null
+    },
+    "text-4":{
+      "title":"",
+      "text":"<a href=\"#\">\r\n<img src=\"http:\/\/lekawp.demo.arw.tf\/wp-content\/uploads\/2015\/10\/essential-banner-2.jpg\" alt=\"Banner\"\/>\r\n<\/a>",
+      "filter":false,
+      "classes":"margin-bottom-30",
+      "ids":null
+    }
+  },
+  "sidebar-collateral":{
+    "text-5":{
+      "title":"",
+      "text":"<a href=\"#\">\r\n<img src=\"http:\/\/lekawp.demo.arw.tf\/wp-content\/uploads\/2015\/10\/essential-banner-1.jpg\" alt=\"Banner\"\/>\r\n<\/a>",
+      "filter":false,
+      "classes":"margin-bottom-30",
+      "ids":null
+    }
+  },
+  "header-3-bottom":{
+    "newslettersignupwidget-2":{
+      "title":"",
+      "text_before_form":"",
+      "text_after_form":"",
+      "filter":false,
+      "classes":""
+    },
+    "text-6":{
+      "title":"",
+      "text":"\u00a9 2015 LEKA E-COMMERCE TEMPLATE\r\nPowered By WPELITE",
+      "filter":false,
+      "classes":"text-center"
+    },
+    "arexworks_widget_social-2":{
+      "title":"",
+      "classes":""
+    }
+  },
+  "footer-column-1":{
+    "text-7":{
+      "title":"",
+      "text":"<a href=\"#\"><img src=\"http:\/\/lekawp.demo.arw.tf\/wp-content\/uploads\/2015\/09\/logo-white.png\" alt=\"\"\/><\/a>\r\n\r\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over ",
+      "filter":true,
+      "classes":"",
+      "ids":null
+    },
+    "arexworks_widget_social-3":{
+      "title":"",
+      "classes":""
+    },
+    "newslettersignupwidget-3":{
+      "title":"",
+      "text_before_form":"",
+      "text_after_form":"",
+      "filter":false,
+      "classes":""
+    }
+  },
+  "footer-column-2":{
+    "nav_menu-1":{
+      "title":"COMPANY",
+      "nav_menu":"Footer Menu",
+      "classes":"small-margin-top-20 medium-margin-top-20 margin-top-75"
+    }
+  },
+  "footer-column-3":{
+    "nav_menu-2":{
+      "title":"SHOPPING GUIDE",
+      "nav_menu":"Footer Menu",
+      "classes":"small-margin-top-20 medium-margin-top-20 margin-top-75"
+    }
+  },
+  "footer-column-4":{
+    "nav_menu-3":{
+      "title":"SHOPPING GUIDE",
+      "nav_menu":"Footer Menu",
+      "classes":"small-margin-top-20 medium-margin-top-20 margin-top-75"
+    }
+  },
+  "footer-column-5":{
+    "nav_menu-4":{
+      "title":"COMPANY",
+      "nav_menu":"Footer Menu",
+      "classes":"small-margin-top-20 medium-margin-top-20 margin-top-75"
+    }
+  }
+}

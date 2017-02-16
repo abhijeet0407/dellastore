@@ -1,0 +1,200 @@
+.woocommerce-checkout{
+
+	.shop_table{
+		margin-bottom: rem-calc(40px);
+		border: none;
+		font-size: rem-calc(12px);
+		.product-name{
+			text-align: left;
+			text-transform: uppercase;
+		}
+		.product-total{
+			text-align: right;
+			vertical-align: top;
+		}
+
+		th{
+			&.product-name,
+			&.product-total{
+				padding: 0;
+				font-size: rem-calc(10px);
+			}
+		}
+		tr{
+			border-width: 0 0 1px 0;
+			border-style: solid;
+			border-color: $border-color;
+			td{
+				padding: rem-calc(10px 0);
+			}
+		}
+		tr.order-total,
+		tr.cart-subtotal{
+			td,th{
+				padding: 5px 0;
+			}
+			td{
+				text-align: right;
+			}
+			th{
+				text-align: left;
+				font-weight: normal;
+			}
+			.amount{
+				font-size: rem-calc(14px);
+			}
+		}
+		.amount{
+			font-weight: normal;
+			color: $primary-color;
+			letter-spacing: 1px;
+		}
+	}
+
+	.create-account{
+		margin-bottom: rem-calc(20px);
+	}
+}
+#place_order{
+	margin-top: rem-calc(20px);
+	float: right;
+	line-height: rem-calc(20px);
+	letter-spacing: 2px;
+	font-size: rem-calc(14px);
+	padding: rem-calc(15px 40px);
+	background: $primary-color;
+	&:hover{
+		background: $secondary-color;
+	}
+}
+form.woocommerce-checkout{
+	h3{
+		text-transform: uppercase;
+		font-size: rem-calc(14px);
+		border-bottom: 1px solid $border-color;
+		letter-spacing: 1px;
+		padding-bottom: rem-calc(15px);
+		margin-bottom: rem-calc(15px);
+	}
+	#order_comments_field label,
+	.create-account,
+	#order_comments_field,
+	.woocommerce-checkout-review-order,
+	.woocommerce-shipping-fields .shipping_address{
+		clear: both;
+		@include clearfix();
+	}
+}
+form.checkout_coupon{
+	.form-row{
+		margin-bottom: 0;
+		width: rem-calc(200px);
+		float: left;
+		margin-right: rem-calc(20px);
+		&.form-row-last .button{
+			margin-top: rem-calc(7px);
+		}
+	}
+	.input-text{
+		height: rem-calc(40);
+	}
+}
+#ship-to-different-address {
+	padding-top: rem-calc(6px);
+}
+.woocommerce-checkout-payment{
+	ul{
+		list-style: none;
+		margin: 0;
+		li{
+			border-bottom: 1px solid $border-color;
+			margin-bottom: rem-calc(10px);
+			padding-bottom: rem-calc(10px);
+			position: relative;
+			label,
+			.payment_box{
+				padding-left: rem-calc(40px);
+				margin: 0;
+			}
+			label{
+				text-transform: uppercase;
+				img{
+					max-height: rem-calc(50px);
+					margin: rem-calc(0 10px);
+				}
+			}
+			.input-radio{
+				position: absolute;
+				left: 0;
+				top: rem-calc(5px);
+			}
+			p{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.about_paypal{
+		text-transform: none;
+	}
+	.payment_method_paypal{
+		.input-radio{
+			top: rem-calc(9px);
+		}
+	}
+}
+
+.woocommerce-order-received{
+	.woocommerce{
+		.section-before-cart {
+			margin-bottom: rem-calc(50px);
+			+ p{
+				border-top: 1px solid $border-color;
+				padding-top: 10px;
+			}
+		}
+		h2,h3{
+			text-transform: uppercase;
+			font-size: rem-calc(14px);
+			border-bottom: 1px solid $border-color;
+			letter-spacing: 1px;
+			padding-bottom: rem-calc(15px);
+			margin-bottom: rem-calc(15px);
+			margin-top: rem-calc(15px);
+		}
+
+		.shop_table.order_details{
+			tfoot{
+				th{
+					font-weight: normal;
+					text-align: left;
+					padding: 0;
+				}
+				td{
+					text-align: right;
+					padding: rem-calc(5px 0);
+				}
+			}
+		}
+		.shop_table.shop_table_responsive.customer_details{
+			th{
+				font-weight: normal;
+				text-align: left;
+				padding: 0;
+			}
+			td{
+				text-align: right;
+				padding: rem-calc(5px 0);
+			}
+		}
+	}
+}
+#ship-to-different-address {
+	label {
+		display: inline;
+	}
+	.input-checkbox{
+		float: left;
+		margin-right: 10px;
+		margin-top: 4px;
+	}
+}

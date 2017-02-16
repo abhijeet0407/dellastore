@@ -1,0 +1,51 @@
+.header-layout-4,
+.header-layout-2,
+.header-layout-1{
+	&.header-transparency{
+		.header-wrapper{
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 99;
+			#header.site-header:not(.active-sticky){
+				 background-color: transparent;
+			}
+		}
+		.header-top{
+			.site-top-bar-text{
+				color: #fff;
+				.fa{
+					color: #fff;
+				}
+				a{
+					color: #fff;
+					&:hover{
+						color: $primary-color;
+					}
+				}
+			}
+			.top-bar-navigation .menu > li > a{
+				color: #fff;
+				.fa{
+					color: inherit;
+				}
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+		.site-header{
+			&:not(.active-sticky){
+				.header-actions .tools_button,
+				.mega-menu > li.menu-item > a,
+				.mega-menu > li.menu-item > h5 {
+					color: #fff;
+					&:hover{
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+}

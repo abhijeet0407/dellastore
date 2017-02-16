@@ -1,0 +1,77 @@
+.header-layout-3{
+	.header-wrapper.header-side-nav{
+		bottom: 0;
+		position: absolute;
+		top: 0;
+		z-index: 1001;
+		#header{
+			left: 0;
+			min-height: 100vh;
+			padding-left: rem-calc(15px);
+			padding-right: rem-calc(15px);
+			padding-top: rem-calc(10px);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background: $header-sidebar-bg;
+			width: rem-calc(370px);
+		}
+	}
+	.site-header{
+		.site-logo{
+			padding: rem-calc(80px 0 30px 75px);
+		}
+		.header-actions{
+			padding: rem-calc(0px 0px 25px 75px);
+			@include clearfix;
+			a{
+				&[aria-expanded="true"],
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+		.header-3-bottom{
+			margin-left: - rem-calc(15px);
+			margin-right: - rem-calc(15px);
+			margin-top: rem-calc(100px);
+			font-size: rem-calc(11px);
+			letter-spacing: 1px;
+			@include clearfix;
+			.widget{
+				padding: rem-calc(0 15px);
+				text-align: center;
+				margin-bottom: rem-calc(20px);
+				@include clearfix;
+				&.widget_text{
+					line-height: 2;
+					text-transform: uppercase;
+				}
+			}
+			.wpb_content_element{
+				margin-bottom: 0;
+			}
+			.nsu_widget {
+				padding: 0;
+				.nsu-form {
+					float: left;
+					width: 100%;
+					margin-top: rem-calc(10px);
+					.nsu-field{
+						border-color: #262626;
+						background: #262626;
+						padding: rem-calc(10px 60px);
+					}
+					p:last-child{
+						right: rem-calc(60px);
+						&:hover{
+							color: #fff;
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+}

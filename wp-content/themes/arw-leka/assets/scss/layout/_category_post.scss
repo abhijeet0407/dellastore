@@ -1,0 +1,238 @@
+/**
+	Post Grid
+*/
+.post.post-loop{
+	&.sticky{
+		.entry-title{
+			&:before{
+				content: "\f02e";
+				font-family: FontAwesome;
+				padding-right: rem-calc(10px);
+				top: - rem-calc(5px);
+				position: relative;
+				color: $primary-color;
+			}
+		}
+	}
+	a{
+		color: inherit;
+		&:hover{
+			color: $primary-color;
+		}
+	}
+	&:hover{
+		.post-thumbnail{
+			img{
+				@include scale(1);
+			}
+		}
+		.post-overlay{
+			background-color: transparentize(#747474,.4);
+			&:before{
+				@include scale(1);
+			}
+		}
+	}
+	.post-overlay{
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: transparent;
+		@include single-transition();
+		&:before{
+			content: "+";
+			font-family: Arial, Helvetica, sans-serif;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: - rem-calc(20px);
+			margin-top: - rem-calc(20px);
+			width: rem-calc(40px);
+			height: rem-calc(40px);
+			line-height: rem-calc(38px);
+			border: 1px solid $border-color;
+			color: #fff;
+			font-size: rem-calc(20px);
+			text-align: center;
+			@include radius(50%);
+			@include scale(0);
+			@include single-transition();
+		}
+	}
+	.post-thumbnail{
+		position: relative;
+		margin-bottom: rem-calc(15px);
+		a{
+			position: relative;
+			display: block;
+			overflow: hidden;
+		}
+		img{
+			width: 100%;
+			@include scale(1.15);
+			@include single-transition();
+			z-index: 1;
+		}
+		.post-format-icon{
+			position: absolute;
+			z-index: 2;
+			background: #fff;
+			font-size: rem-calc(18px);
+			width: rem-calc(50px);
+			height: rem-calc(50px);
+			text-align: center;
+			line-height: rem-calc(50px);
+			bottom: rem-calc(10px);
+			right: rem-calc(10px);
+			color: $header-font-color;
+			@include radius(50%);
+		}
+	}
+	.entry-title{
+		margin: rem-calc(0 0 5px);
+		font-size: rem-calc(24px);
+		line-height: normal;
+		font-weight: 300;
+	}
+	.post-excerpt{
+		margin-bottom: rem-calc(15px);
+	}
+	.post-category-list{
+		font-family: $highlight-font-family;
+		font-size: rem-calc(18px);
+		display: block;
+		font-style: italic;
+		margin-bottom: rem-calc(5px);
+		i{
+			display: none;
+		}
+		a{
+			color: $primary-color;
+		}
+	}
+	.post-meta{
+		padding-top: rem-calc(5px);
+		border-top: 1px solid $border-color;
+		margin-bottom: rem-calc(15px);
+		font-size: rem-calc(14px);
+		@include clearfix;
+		i{
+			color: $primary-color;
+		}
+	}
+	.post-meta-date{
+		text-transform: uppercase;
+	}
+}
+
+/**
+	Post Isotope
+*/
+.post.post-loop.isotope-item{
+	margin-bottom: rem-calc(15px);
+	.post-excerpt{
+		margin-top: rem-calc(20px);
+	}
+}
+.post.post-loop.post-single{
+	&:hover{
+		.post-thumbnail{
+			img{
+				@include scale(1.15);
+			}
+			&:hover{
+				img{
+					@include scale(1);
+				}
+				.post-overlay{
+					background-color: transparentize(#747474,.4);
+					&:before{
+						@include scale(1);
+					}
+				}
+			}
+		}
+		.post-overlay{
+			background-color: transparent;
+			&:before{
+				@include scale(0);
+			}
+		}
+	}
+}
+/**
+	Post full
+*/
+.post.post-loop.post-full{
+	margin-bottom: rem-calc(40px);
+	.entry-title{
+		margin-bottom: rem-calc(10px);
+	}
+	.post-excerpt,
+	.entry-content{
+		margin-bottom: rem-calc(30px);
+	}
+	.post-excerpt p:last-child{
+		margin-bottom: 0;
+	}
+}
+/**
+	Post Slide
+*/
+.post.post-loop.post-slide{
+	margin-bottom: rem-calc(30px);
+	.grid-box{
+		background: $secondary-color;
+	}
+	.post-overlay{
+		background-color: transparent;
+		display: none;
+	}
+	.post-thumbnail{
+		float: left;
+		margin-bottom: 0;
+		width: percentage(8/17);
+		.post-meta-date{
+			position: absolute;
+			bottom: 0;
+			z-index: 2;
+			right: rem-calc(15px);
+			background: #fff;
+			font-size: rem-calc(11px);
+			padding: rem-calc(5px 3px 10px);
+			text-align: center;
+			max-width: rem-calc(50px);
+			line-height: normal;
+		}
+	}
+	.post-content{
+		float: right;
+		width: percentage(9/17);
+		padding: rem-calc(15px 15px 15px 30px);
+	}
+	.entry-title{
+		color: #fff;
+		font-size: rem-calc(18px);
+	}
+	.post-meta{
+		border: none;
+		padding: 0;
+		margin: 0;
+		&:before,
+		&:after{
+			display: none;
+		}
+	}
+}
+//.arexworks-isotope,
+.posts-infinite-container{
+	+ .pagination {
+		display: none;
+	}
+}
+.page-links > a {
+	padding: rem-calc(0 5px);
+}

@@ -1,0 +1,151 @@
+/**
+ * The main stylesheet for Leka.
+ *
+ * @package Leka
+ * @author  ArexWorkers
+ * @link	http://lekawp.demo.arw.tf
+ */
+
+$include-js-meta-styles : false;
+$include-html-global-classes : false;
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. CSS General
+	1.1 Import lib css .. slick , font-anwesome , easy-zoom , easy responsive tab ..etc.
+2. Widget
+3. Header
+	3.1 Header Layout 1
+	3.2 Header Layout 2
+	3.3 Header Sticky
+	3.4 Header Full Width
+4. MegaMenu
+5. Main
+6. Footer
+	6.1 Footer Layout 1
+	6.1 Footer Layout 2
+7. Category Post
+8. Search Post
+9. Single Post
+10. Page
+11. Comments
+12. Portfolio
+13. VC Override
+14. Extra class
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+- Primary color     #7e883a
+- Text color        #747474
+- Heading color		#303030
+- Background color  #fff
+
+[Fonts]
+- Default body text			"Lato",sans-serif
+- Default heading text		"Lato",sans-serif
+- Default highlight text	"Crimson Text Italic",sans-serif
+
+-------------------------------------------------------------------*/
+
+
+
+
+
+@import 'foundation/components/global';
+@import "variable";
+
+/*--------------------------------------------------------------
+	1. CSS General
+---------------------------------------------------------------*/
+/*--------------------------------------------------------------
+	1.1 Import lib css .. slick , font-anwesome , easy-zoom , easy responsive tab ..etc.
+---------------------------------------------------------------*/
+@import "inc/slick";
+
+@import "inc/font_anwesome/font_awesome";
+@import "inc/linearicons_free";
+
+@import "inc/easyzoom";
+@import "inc/easy_responsive_tabs";
+@import "inc/fancybox";
+@import "inc/animate/animate";
+
+@import "layout/general";
+
+
+/*--------------------------------------------------------------
+	2. Widget
+---------------------------------------------------------------*/
+@import "layout/widget";
+
+
+/*--------------------------------------------------------------
+	3. Header
+---------------------------------------------------------------*/
+@import "layout/header";
+
+
+/*--------------------------------------------------------------
+	4. MegaMenu
+---------------------------------------------------------------*/
+@import "layout/mega_menu";
+
+
+/*--------------------------------------------------------------
+	5. Main
+---------------------------------------------------------------*/
+@import "layout/main";
+
+
+/*--------------------------------------------------------------
+	6. Footer
+---------------------------------------------------------------*/
+@import "layout/footer";
+
+
+/*--------------------------------------------------------------
+	7. Category Post
+---------------------------------------------------------------*/
+@import "layout/category_post";
+
+
+/*--------------------------------------------------------------
+	8. Search Post
+---------------------------------------------------------------*/
+@import "layout/search_post";
+
+
+/*--------------------------------------------------------------
+	9. Single Post
+---------------------------------------------------------------*/
+@import "layout/single_post";
+
+
+/*--------------------------------------------------------------
+	10. Page
+---------------------------------------------------------------*/
+@import "layout/page";
+
+
+/*--------------------------------------------------------------
+	11. Comments
+---------------------------------------------------------------*/
+@import "layout/comment";
+
+/*--------------------------------------------------------------
+	12. Portfolio
+---------------------------------------------------------------*/
+@import "layout/portfolio";
+
+/*--------------------------------------------------------------
+	13. VC Override
+---------------------------------------------------------------*/
+@import "layout/visual_composer";
+
+
+/*--------------------------------------------------------------
+	14. Extra class
+---------------------------------------------------------------*/
+@import "extra_class";

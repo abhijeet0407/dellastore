@@ -1,0 +1,38 @@
+.header-layout-2{
+	.site-header{
+		.header-main{
+			padding: rem-calc(60px 0 50px);
+			.header-left{
+				float: $left;
+				width: 25%;
+			}
+			.header-right{
+				float: $right;
+				width: 75%;
+				.main-menu{
+					float: $left;
+					width: percentage(7/9);
+				}
+				.header-actions{
+					float: $right;
+					width: percentage(2/9);
+					> ul{
+						float: $right;
+					}
+				}
+			}
+		}
+		.main-menu-wrap{
+			float: left;
+			width: 100%;
+		}
+		.main-menu{
+			text-align: center;
+			> .menu-item{
+				float: none;
+				display: inline-block;
+				margin: 0;
+			}
+		}
+	}
+}

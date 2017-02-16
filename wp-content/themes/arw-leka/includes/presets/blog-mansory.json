@@ -1,0 +1,6 @@
+{
+  "layout_blog":"col-1c",
+  "blog_post_display_type":"isotope",
+  "blog_post_columns":4,
+  "blog_enable_infinite_scroll":true
+}

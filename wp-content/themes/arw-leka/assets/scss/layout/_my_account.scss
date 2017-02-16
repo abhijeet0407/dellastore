@@ -1,0 +1,51 @@
+.form-login-register{
+	padding: rem-calc(100px 0);
+	h2{
+		font-size: rem-calc(100px);
+		font-family: $highlight-font-family;
+		text-transform: uppercase;
+		color: $primary-color;
+		font-weight: normal;
+		text-align: right;
+		letter-spacing: rem-calc(15px);
+		margin: 0;
+	}
+	form{
+		background: none !important;
+		border: none !important;
+		padding: 0 !important;
+		label{
+			text-transform: none !important;
+			font-weight: normal !important;
+		}
+		.input-text{
+			height: rem-calc(60px);
+			background: none;
+			margin-top: rem-calc(15px) !important;
+		}
+		.button{
+			margin-top: rem-calc(10px);
+		}
+	}
+}
+
+.addresses,
+.addresses.row,
+table.customer_details,
+table.order_details,
+.my_account_orders,
+.myaccount_address,
+.myaccount_user{
+	margin-bottom: rem-calc(40px);
+}
+.my_account_orders {
+	.button {
+		white-space: nowrap;
+	}
+	.order-actions {
+		text-align: right;
+		.button {
+			margin: 0;
+		}
+	}
+}

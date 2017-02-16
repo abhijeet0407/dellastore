@@ -1,0 +1,1924 @@
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/_variable.scss
+
+@function print_var($var){
+	@return #{$var};
+}
+
+$rem-base:							print_var('<?php echo $body_font_base;?>');
+$primary-color:						print_var('<?php echo $primary_color;?>');
+$secondary-color: 					print_var('<?php echo $secondary_color;?>');
+$alert-color: 						#f04124;
+$success-color: 					#43AC6A;
+$warning-color: 					#f08a24;
+$info-color: 						#a0d3e8;
+
+$border-color:						print_var('<?php echo $border_color;?>');
+$body-font-color: 					print_var('<?php echo $body_font_color;?>');
+$body-font-family: 					print_var('<?php echo $body_font_family;?>');
+
+$heading-font-family: 				print_var('<?php echo $heading_font_family;?>');
+$heading-font-color: 				print_var('<?php echo $heading_font_color;?>');
+
+$highlight-font-family: 			print_var('<?php echo $highlight_font_family;?>');
+
+$menu-background: 					print_var('<?php echo $menu_background;?>');
+$menu-lv1-color:					print_var('<?php echo $menu_lv1_color;?>');
+$menu-lv1-bg:						print_var('<?php echo $menu_lv1_background;?>');
+$menu-lv1-hover-color:				print_var('<?php echo $menu_lv1_hover_color;?>');
+$menu-lv1-hover-bg:					print_var('<?php echo $menu_lv1_hover_background;?>');
+$submenu-background:				print_var('<?php echo $submenu_background;?>');
+$submenu-color:						print_var('<?php echo $submenu_link_color;?>');
+$submenu-hover-color:				print_var('<?php echo $submenu_link_hover_color;?>');
+
+$menu-mobile-background: 			print_var('<?php echo $menu_mobile_background;?>');
+$menu-mobile-lv1-color:				print_var('<?php echo $menu_mobile_lv1_color;?>');
+$menu-mobile-lv1-bg:				print_var('<?php echo $menu_mobile_lv1_background;?>');
+$menu-mobile-lv1-hover-color:		print_var('<?php echo $menu_mobile_lv1_hover_color;?>');
+$menu-mobile-lv1-hover-bg:			print_var('<?php echo $menu_mobile_lv1_hover_background;?>');
+
+$header-sticky-background:			print_var('<?php echo $header_sticky_background;?>');
+$header-sticky-lv1-color:			print_var('<?php echo $header_sticky_lv1_color;?>');
+$header-sticky-lv1-background:		print_var('<?php echo $header_sticky_lv1_background;?>');
+$header-sticky-lv1-hover-color:		print_var('<?php echo $header_sticky_lv1_hover_color;?>');
+$header-sticky-lv1-hover-background:print_var('<?php echo $header_sticky_lv1_hover_background;?>');
+
+$header-text-color:					print_var('<?php echo $header_text_color;?>');
+$header-link-color:					print_var('<?php echo $header_link_color;?>');
+$header-link-hover-color:			print_var('<?php echo $header_link_hover_color;?>');
+
+$page-header-title-color:			print_var('<?php echo $page_header_title_color;?>');
+$page-header-text-color:			print_var('<?php echo $page_header_text_color;?>');
+$page-header-link-color:			print_var('<?php echo $page_header_link_color;?>');
+$page-header-link-hover-color:		print_var('<?php echo $page_header_link_hover_color;?>');
+
+$footer-text-color:					print_var('<?php echo $footer_text_color;?>');
+$footer-heading-color:				print_var('<?php echo $footer_heading_color;?>');
+$footer-link-color:					print_var('<?php echo $footer_link_color;?>');
+$footer-link-hover-color:			print_var('<?php echo $footer_link_hover_color;?>');
+
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_general.scss
+html,body{
+	font-size: $rem-base;
+	font-family: $body-font-family;
+	color: $body-font-color;
+}
+table.compare-list {
+	.price {
+		.amount{
+			color:$primary-color;
+		}
+		del{
+			.amount{
+				color: $body-font-color;
+			}
+		}
+	}
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: $heading-font-family;
+}
+blockquote{
+	border-color: $primary-color;
+}
+
+button, .button{
+	background: $secondary-color;
+	color: #fff;
+	&:hover{
+		background: $primary-color;
+		color: #fff;
+	}
+}
+
+.star-rating{
+	color: $border-color;
+}
+.highlight-font-family{
+	font-family: $highlight-font-family;
+}
+
+.arexworks-global-message {
+	.popup-icon{
+		color: $primary-color;
+	}
+
+}
+#topcontrol {
+	button{
+		color: $primary-color;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+.pagination,
+.woocommerce-pagination{
+	ul{
+		.page-numbers{
+			border-color: $border-color;
+			&.current,
+			&:hover{
+				border-color: $primary-color;
+				color: #fff;
+				background: $primary-color;
+			}
+		}
+	}
+}
+.share-links{
+	a{
+
+		border-color:$body-font-color;
+		color: $body-font-color;
+		&:hover{
+			border-color:$primary-color;
+			color: $body-font-color;
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_widget.scss
+
+.nsu_widget{
+	.nsu-form{
+		.nsu-field{
+			border-color:$border-color;
+			color: $body-font-color;
+		}
+		p:last-child{
+			color: $primary-color;
+			&:hover{
+				color: $secondary-color;
+			}
+		}
+	}
+}
+
+// Sidebar Widget
+.sidebar-inner{
+	.widget{
+		.widget-title{
+			border-color: $border-color;
+		}
+	}
+}
+
+// Widget Comment
+.widget_recent_comments{
+	ul{
+		li{
+			.comment-author-link{
+				color: $heading-font-color;
+				&:hover{
+					color: $primary-color;
+				}
+				a{
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+// Widget Tag cloud
+.widget_product_tag_cloud,
+.widget_tag_cloud{
+
+	li{
+		a{
+			border-color: $border-color;
+			&:hover{
+				background: $primary-color;
+				border-color: $primary-color;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.widget_layered_nav,
+.widget_recent_comments,
+.widget_product_categories,
+.widget_rss,
+.widget_recent_entries,
+.widget_pages,
+.widget_meta,
+.widget_categories,
+.widget_archive,
+.widget_nav_menu{
+	> ul{
+		> li{
+			+ li{
+				border-top-color: $border-color;
+			}
+		}
+	}
+}
+
+.product_list_widget{
+	a{
+		color: $heading-font-color;
+		&:hover{
+			color: $primary-color;
+		}
+	}
+	.amount{
+		color: $primary-color;
+	}
+	del{
+		color: $body-font-color;
+	}
+}
+.widget_shopping_cart_content{
+	.total{
+		.amount{
+			color: $primary-color;
+		}
+	}
+}
+// compare
+
+// Price slider
+
+.widget_price_filter {
+
+	.ui-slider {
+		background-color: $border-color;
+		&:after{
+			background: $border-color;
+		}
+		.ui-slider-handle {
+			background-color: $primary-color;
+		}
+		.ui-slider-range {
+			background-color: $heading-font-color;
+		}
+	}
+}
+
+
+.widget_layered_nav_filters {
+	ul {
+		li {
+			.amount{
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.custom-style-widget-nav-menu{
+	&.widget,
+	.widget{
+		.widgettitle{
+			background: $primary-color;
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_header.scss
+.header-top{
+	border-bottom-color:$border-color;
+	color:  $header-text-color;
+
+	ul{
+		ul{
+			border-color:$border-color;
+		}
+	}
+	.fa{
+		color: $header-link-hover-color;
+	}
+	a{
+		color:  $header-text-color;
+		&:hover{
+			color: $header-link-hover-color;
+		}
+	}
+}
+
+.site-header{
+	color: $header-text-color;
+	a{
+		color: $header-link-color;
+		&:hover{
+			color: $header-link-hover-color;
+		}
+	}
+	.header-actions{
+		.tools_button{
+			.cart-items{
+				background: $primary-color;
+			}
+		}
+	}
+
+	#header-search-form{
+		border-color: $border-color;
+		.search-form{
+			.search-submit{
+				&:hover{
+					color: $header-link-hover-color;
+				}
+			}
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_header-1.scss
+.header-layout-1{
+	.site-header{
+		.header-main{
+			.header-right{
+				border-bottom-color: $border-color;
+			}
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_header-2.scss
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_header-3.scss
+.header-layout-3{
+	.header-wrapper.header-side-nav{
+		.main-menu-wrap{
+			background: $menu-background;
+		}
+	}
+	.site-header{
+		.header-3-bottom{
+			.nsu_widget {
+				.nsu-form {
+					.nsu-field{
+						border-color: #262626;
+						background: #262626;
+					}
+					p:last-child{
+						&:hover{
+							color: #fff;
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_header-4.scss
+.header-layout-4{
+	.header-wrapper{
+		.mega-menu-sidebar{
+			background: $menu-background;
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_header-transparency.scss
+.header-layout-4,
+.header-layout-2,
+.header-layout-1{
+	&.header-transparency{
+		.header-top{
+			.site-top-bar-text{
+				color: #fff;
+				.fa{
+					color: #fff;
+				}
+				a{
+					color: #fff;
+					&:hover{
+						color: $primary-color;
+					}
+				}
+			}
+			.top-bar-navigation .menu > li > a{
+				color: #fff;
+				.fa{
+					color: inherit;
+				}
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+		.site-header{
+			&:not(.active-sticky){
+				.header-actions .tools_button,
+				.mega-menu > li.menu-item > a,
+				.mega-menu > li.menu-item > h5 {
+					color: #fff;
+					&:hover{
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+.header-layout-2 .header-main,
+.header-layout-1 .main-menu-wrap{
+	background: $menu-background;
+}
+
+/*--------------------------------------------------------------
+	3.6 Header Sticky
+---------------------------------------------------------------*/
+
+.site-header{
+	&.active-sticky{
+		a{
+			color: $header-sticky-lv1-color;
+			&:hover{
+				color: $header-sticky-lv1-hover-color;
+			}
+		}
+		&:not(.sticky-menu-header){
+			background: $header-sticky-background;
+		}
+		&.sticky-menu-header{
+			.header-main{
+				.header-layout-2 & {
+					background: $header-sticky-background;
+				}
+			}
+			.main-menu-wrap{
+				.header-layout-1 & {
+					background: $header-sticky-background;
+				}
+			}
+		}
+		.mega-menu > li.menu-item{
+			> a,
+			> h5{
+				.header-side-nav & ,
+				& {
+					color: $header-sticky-lv1-color;
+					background-color: $header-sticky-lv1-background;
+				}
+
+			}
+			&.active,
+			&:hover{
+				> a,
+				> h5{
+					.header-side-nav & ,
+					& {
+						color: $header-sticky-lv1-hover-color;
+						background-color: $header-sticky-lv1-hover-background;
+					}
+				}
+			}
+		}
+	}
+}
+.header-layout-3 .header-wrapper.header-side-nav #header.active-sticky{
+	background: $header-sticky-background;
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_mega_menu.scss
+
+/* Mega Menu */
+
+.mega-menu {
+	> li.menu-item {
+		> a,
+		> h5 {
+			color: $menu-lv1-color;
+			background-color: $menu-lv1-bg;
+		}
+
+		&.active,
+		&:hover {
+			> a,
+			> h5 {
+				color: $menu-lv1-hover-color;
+				background-color: $menu-lv1-hover-bg;
+			}
+		}
+		li.menu-item {
+			> a,
+			> h5 {
+				color: $submenu-color;
+			}
+			&.active,
+			&:hover {
+				> a,
+				> h5 {
+					color: $submenu-hover-color;
+				}
+			}
+		}
+	}
+
+	.popup {
+		background: $submenu-background;
+		ul.sub-menu {
+			background: $submenu-background;
+		}
+	}
+
+	.wide {
+		.popup {
+			left: 0;
+			> .inner {
+				border-color: $border-color;
+			}
+		}
+
+		.narrow {
+			.popup {
+				> .inner {
+					ul.sub-menu {
+						border-color: $border-color;
+					}
+				}
+				li.menu-item {
+					> a,
+					> h5 {
+						border-bottom-color: transparent;
+					}
+
+				}
+			}
+
+		}
+
+		.tip {
+			color: #fff;
+
+			&.hot {
+				background-color: $primary-color;
+				.tip-arrow:before {
+					color: $primary-color;
+				}
+			}
+
+		}
+
+	}
+}
+.mega-menu .wide .popup > .inner > ul.sub-menu > li.menu-item > ul.sub-menu{
+	background-color: transparent;
+	z-index: inherit;
+}
+li.menu-item.sub-menu-color-white{
+	li.menu-item{
+		> h5,
+		> a{
+			color: #fff;
+			&:hover{
+				color: $primary-color;
+			}
+		}
+	}
+	.inner > ul > li > ul > li ul{
+		background: $secondary-color;
+	}
+}
+
+.mega-menu .wide .popup > .inner > ul.sub-menu > li.menu-item > a,
+.mega-menu .wide .popup > .inner > ul.sub-menu > li.menu-item > h5{
+	border-bottom-color:$border-color;
+}
+.mega-menu .wide .popup > .inner > ul.sub-menu > li.menu-item li.menu-item{
+	&.submenu-right > ul.sub-menu,
+	ul.sub-menu{
+		border-color:$border-color;
+	}
+}
+
+/* Side Menu */
+
+.mega-menu-sidebar{
+	.main-menu.mega-menu{
+		> li.menu-item{
+			> a,
+			> h5{
+				color: $menu-mobile-lv1-color;
+				background-color: $menu-mobile-lv1-bg;
+			}
+			&.active,
+			&:hover{
+				> a,
+				> h5{
+					color: $menu-mobile-lv1-hover-color;
+					background-color: $menu-mobile-lv1-hover-bg;
+				}
+			}
+		}
+	}
+}
+
+/* Mobile */
+
+.mobile-main-menu{
+	span.arrow{
+		color: $menu-mobile-lv1-color;
+	}
+	li:hover,
+	.open{
+		> span.arrow{
+			color: $menu-mobile-lv1-hover-color;
+		}
+	}
+	li.menu-item{
+		a{
+			color: $menu-mobile-lv1-color;
+			background-color: $menu-mobile-lv1-bg;
+		}
+		&.active,
+		&:hover{
+			> a{
+				color: $menu-mobile-lv1-hover-color;
+				background-color: $menu-mobile-lv1-hover-bg;
+			}
+		}
+	}
+}
+
+#mobile_menu_wrapper{
+	background: $menu-mobile-background;
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_main.scss
+
+.page-header-layout-1{
+	.page-header-wrapper{
+		color: $page-header-text-color;
+	}
+	.page_header_title{
+		h1{
+			color: $page-header-title-color;
+		}
+	}
+	.page_header_breadcrumbs{
+		.breadcrumb{
+			li{
+				color: $page-header-link-color;
+				&:hover{
+					a{
+						color: $page-header-link-hover-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_footer.scss
+/*
+	Footer
+*/
+
+/*--------------------------------------------------------------
+	6.1 Footer Layout 1
+---------------------------------------------------------------*/
+.footer-wrapper #site-footer{
+	color: $footer-text-color;
+	a{
+		color: $footer-link-color;
+		&:hover{
+			color: $footer-link-hover-color;
+		}
+	}
+	h1,h2,h3,h4,h5,h6,
+	.widget-title{
+		color: $footer-heading-color;
+	}
+}
+.footer-layout-1 #site-footer{
+	.columns:first-child{
+		.widget_text{
+			color: $footer-text-color;
+		}
+	}
+	.nsu_widget {
+		.nsu-form {
+			.nsu-field{
+				border-color: #262626;
+				background: #262626;
+			}
+			p:last-child{
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_category_post.scss
+/**
+	Post Grid
+*/
+.post.post-loop{
+	&.sticky{
+		.entry-title{
+			&:before{
+				color: $primary-color;
+			}
+		}
+	}
+	a{
+		color: inherit;
+		&:hover{
+			color: $primary-color;
+		}
+	}
+
+	.post-overlay{
+		background-color: transparent;
+		&:before{
+			border-color: $border-color;
+			color: #fff;
+		}
+	}
+	.post-thumbnail{
+		.post-format-icon{
+			background: #fff;
+			color: $heading-font-color;
+		}
+	}
+	.post-category-list{
+		font-family: $highlight-font-family;
+		a{
+			color: $primary-color;
+		}
+	}
+	.post-meta{
+		border-top-colo: $border-color;
+		i{
+			color: $primary-color;
+		}
+	}
+}
+
+/**
+	Post Isotope
+*/
+
+/**
+	Post full
+*/
+
+/**
+	Post Slide
+*/
+.post.post-loop.post-slide{
+	.grid-box{
+		background: $secondary-color;
+	}
+
+	.post-thumbnail{
+		.post-meta-date{
+			background: #fff;
+		}
+	}
+
+	.entry-title{
+		color: #fff;
+	}
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_search_post.scss
+.overlay-top-search {
+	input[type="text"],
+	input[type="search"]{
+		border-color: $primary-color;
+		color: $primary-color;
+	}
+
+	::-webkit-input-placeholder {
+		color: $primary-color;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: $primary-color;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: $primary-color;
+	}
+
+	:-ms-input-placeholder {
+		color: $primary-color;
+	}
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_single_post.scss
+.entry-content{
+	.post-single{
+		.entry-content{
+			border-top-color: $border-color;
+		}
+		.post-meta-footer{
+			border-top-color: $border-color;
+			border-bottom-color: $border-color;
+			a{
+				border-color: $border-color;
+				&:hover{
+					border-color: $primary-color;
+				}
+			}
+		}		
+	}
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_page.scss
+.entry-content-404{
+	p{
+		.button{
+			i{
+				color: $primary-color;
+			}
+			&:hover{
+				i{
+					color: inherit;
+				}
+			}
+		}
+	}
+	.search-form{
+		.search-submit{
+			background: $primary-color;
+		}
+	}
+}
+.contact-information{
+	i{
+		color: $primary-color;
+	}
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_comment.scss
+.comments-list{
+	.reply{
+		.comment-reply-link{
+			color: $heading-font-color;
+			&:hover{
+				color: $primary-color;
+			}
+		}
+	}
+
+	.comment-details{
+		border-left-color: $border-color;
+	}
+	.comment-meta {
+		.fn{
+			color: $primary-color;
+		}
+	}
+}
+.load-more-comments{
+	span{
+		&:after,
+		&:before{
+			background: $border-color;
+		}
+	}
+}
+
+.comments-title{
+	background: $border-color;
+}
+.comment-respond{
+	textarea,
+	input{
+		border-color: $border-color;
+	}
+}
+.comment-reply-title{
+	border-bottom-color: $border-color;
+}
+
+.single-product{
+	.comments-list .comment-meta{
+		.fn{
+			color: $heading-font-color;
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_portfolio.scss
+
+.portfolio-filter-wrapper.isotope-filter-wrapper{
+	.active{
+		a{
+			&:after{
+				border-bottom-color:$primary-color
+			}
+		}
+	}
+}
+
+.portfolio.portfolio-loop{
+	.portfolio-box{
+		&:hover{
+			.portfolio-overlay{
+				background-color: $secondary-color;
+			}
+		}
+	}
+	.portfolio-title{
+		a{
+			&:hover{
+				color: $primary-color;
+			}
+		}
+	}
+	.portfolio-category-list{
+		color: $primary-color;
+		font-family: $highlight-font-family;
+	}
+
+	&.portfolio-grid{
+		.portfolio-overlay{
+			&:before{
+				border-color: $border-color;
+				color: #fff;
+			}
+		}
+	}
+
+	&.portfolio-normal,
+	&.portfolio-full{
+		.portfolio-title{
+			color: #fff;
+			&:after{
+				background: #fff;
+			}
+		}
+	}
+
+	&.portfolio-single{
+		.post-meta-footer{
+			border-top-color:$border-color;
+			border-bottom-color: $border-color;
+		}
+		.button-visit-portfolio-link{
+			border-color: $secondary-color;
+			color: $secondary-color;
+			&:hover{
+				background: $primary-color;
+				color: #fff;
+				border-color: $primary-color;
+			}
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_visual_composer.scss
+
+/**
+	Tabs
+*/
+.vc_tta-container{
+	.vc_tta.vc_tta-tabs{
+		&.vc_tta-style-style-1{
+			.vc_tta-tabs-list{
+				.vc_tta-tab{
+					a{
+						color: #cbcbcb;
+					}
+					&:hover,
+					&.vc_active{
+						a{
+							color: $secondary-color;
+						}
+					}
+				}
+			}
+		}
+		&.vc_tta-style-style-2{
+			.vc_tta-tabs-list{
+				.vc_tta-tab{
+					border-bottom-color: $border-color;
+					a{
+						color: $secondary-color;
+					}
+					&:hover,
+					&.vc_active{
+						a{
+							color: #fff;
+							background: $secondary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/**
+	Toggle
+*/
+.vc_toggle{
+	&.vc_toggle_default{
+		.vc_toggle_icon{
+			&:before{
+				color: $secondary-color;
+				background: $border-color;
+			}
+		}
+		&.vc_toggle_active{
+			.vc_toggle_icon{
+				&:before{
+					color: #fff;
+					background: $primary-color;
+				}
+			}
+			.vc_toggle_title{
+				h4{
+					color: $primary-color;
+				}
+			}
+		}
+		.vc_toggle_title{
+			border-bottom-color: $border-color;
+		}
+	}
+}
+
+/**
+	Progress Bar
+*/
+.vc_progress_bar{
+	&.vc_progress_bar_style_1{
+		.vc_single_bar{
+			background: $border-color;
+			.vc_bar{
+				background: $secondary-color;
+			}
+		}
+	}
+}
+
+/**
+	Slick
+*/
+.ult-carousel-wrapper{
+	.slick-slider {
+		.slick-dots {
+			background: #f2f2f3;
+			li{
+				i{
+					background: #cbcbcb;
+				}
+				&.slick-active {
+					i{
+						border-color: $primary-color;
+						background: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+/**
+	Interactive Banner 2
+*/
+
+
+.ult-ib-effect-custom1,
+.ult-ib-effect-custom2,
+.ult-ib-effect-custom3{
+	.ult-new-ib-title,
+	.ult-new-ib-content,
+	.ult-new-ib-img{
+		color: #fff;
+	}
+}
+
+
+/**
+	Isotope
+*/
+.isotope-filter-wrapper{
+	a.active,
+	.active a{
+		color: $primary-color;
+	}
+}
+
+.arexworks-testimonial{
+	&.testimonial-style-1{
+		.testimonial-content{
+			font-family: $highlight-font-family;
+		}
+		.testimonial-author{
+			span{
+				color: $primary-color;
+			}
+		}
+	}
+	&.testimonial-style-2{
+		.testimonial-arrow{
+			border-top-color: $border-color;
+		}
+		.testimonial-content{
+			font-family: $highlight-font-family;
+		}
+		.testimonial-author{
+			span{
+				color: $primary-color;
+			}
+		}
+	}
+	&.testimonial-style-3{
+		.testimonial-content{
+			font-family: $highlight-font-family;
+		}
+		.testimonial-author{
+			span{
+				color: $primary-color;
+			}
+		}
+		.testimonial-arrow{
+			span{
+				background: $border-color;
+				&:after,
+				&:before{
+					border-top-color: $border-color;
+				}
+			}
+		}
+	}
+}
+/**
+	Arexworks Member
+*/
+.arexworks-member{
+	.member-inner{
+		.member-overlay{
+			background: $secondary-color;
+		}
+		.member-link{
+			a{
+				background: #fff;
+				color: $secondary-color;
+				&:hover{
+					color: #fff;
+					background: $primary-color;
+				}
+			}
+		}
+		.member-info{
+			p{
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+// Latest Blog
+.latest-post-shortcode-wrapper{
+	.post-nav-slider{
+		button{
+			background: #e1e1e1;
+			color: $body-font-color;
+			&:hover{
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+.latest_posts_item{
+	.entry-title{
+		a{
+			color: $heading-font-color;
+			&:hover{
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.wpb_content_element.vc_basic_grid{
+	.vc_btn,
+	.vc_btn3{
+		background: $secondary-color;
+		font-family: $highlight-font-family;
+		&:hover{
+			background: $primary-color;
+		}
+	}
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/_extra_class.scss
+
+.border-color{
+	border-color: $border-color !important;
+}
+.color-heading{
+	color: $heading-font-color !important;
+}
+.text-color-heading{
+	color: $heading-font-color !important;
+}
+.background-heading{
+	background-color: $heading-font-color !important;
+}
+.background-primary{
+	background-color: $primary-color !important;
+}
+
+.border-color-primary{
+	border-color: $primary-color !important;
+}
+.border-color-heading{
+	border-color: $heading-font-color !important;
+}
+.text-color-primary{
+	color: $primary-color !important;
+}
+.text-color-body{
+	color:$body-font-color !important;
+}
+
+.slick-slider{
+	.slick-dots{
+		li{
+			span{
+				background: $border-color;
+			}
+			&:hover,
+			&.slick-active{
+				span{
+					background: $primary-color;
+				}
+			}
+		}
+	}
+	button.slick-next,
+	button.slick-prev{
+		border-color: $body-font-color;
+		color: $body-font-color;
+		&:hover{
+			color: $primary-color;
+			border-color: $primary-color;
+		}
+	}
+}
+
+.carousel-control-style-1{
+	.slick-slider{
+		button.slick-next,
+		button.slick-prev{
+			background: #fff;
+			color: $secondary-color;
+			&:hover{
+				color:#fff;
+				background: $primary-color;
+			}
+		}
+	}
+}
+.carousel-control-style-2{
+	.slick-slider{
+		button.slick-next,
+		button.slick-prev{
+			background: #fff;
+			color: $secondary-color;
+			&:hover{
+				color:#fff;
+				background: $primary-color;
+			}
+		}
+	}
+}
+.arexworks-slick-slider,
+.arexworks-slide{
+	.slick-dots{
+		button{
+			background: #c7c7c7;
+		}
+		.slick-active{
+			button{
+				background-color: transparent;
+				border-color: $primary-color;
+			}
+		}
+	}
+}
+.arexowrks-icon-box{
+	&.active{
+		.box-icon{
+			background: $heading-font-color;
+			color: #fff;
+			border-color: $heading-font-color;
+		}
+	}
+	.box-icon{
+		border-color: $border-color;
+	}
+	.box-sub-heading,
+	.box-heading{
+		font-family: $highlight-font-family;
+	}
+	.box-heading{
+		color: $heading-font-color;
+	}
+}
+
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_wooecommerce.scss
+.select2-drop-active{
+	border-color: transparent $border-color $border-color;
+}
+
+.woocommerce{
+	.woocommerce-message,
+	.woocommerce-error,
+	.woocommerce-info {
+		border-color: $success-color $border-color $border-color;
+		background: #fff;
+	}
+
+	.woocommerce-message {
+		border-top-color: $success-color;
+		&:before {
+			color: $success-color;
+		}
+	}
+
+	.woocommerce-info {
+		border-top-color: $info-color;
+		&:before {
+			color: $info-color;
+		}
+	}
+	.woocommerce-error {
+		border-top-color: $alert-color;
+		&:before {
+			color: $alert-color;
+		}
+	}
+
+	small.note {
+		color: $secondary-color;
+	}
+}
+.woocommerce {
+	.quantity{
+		.button-qty,
+		.input-text{
+			background: #f8f8f8;
+		}
+	}
+	.onsale-badge,
+	.new-badge{
+		background: $secondary-color;
+		color: #fff;
+
+	}
+	.onsale-badge{
+		background: $primary-color;
+	}
+	.woocommerce-ordering{
+		.orderby{
+			border-color: $border-color;
+			color: $body-font-color;
+		}
+	}
+
+	p.stars {
+
+		a {
+
+			&:hover,
+			&.active{
+				color: $primary-color;
+			}
+			&.star-1,
+			&.star-2,
+			&.star-3,
+			&.star-4,
+			&.star-5 {
+				border-right-color: #ccc;
+			}
+		}
+	}
+
+	/**
+	 * Tables
+	 */
+	table{
+		&.table_cart_totals{
+			.amount{
+				color: $secondary-color;
+			}
+			.order-total{
+				.amount{
+					color: $primary-color;
+				}
+			}
+		}
+
+		.quantity{
+			.input-text{
+				border-color: $border-color;
+				background: none;
+			}
+			.button-qty{
+				background: none;
+				border-color: $border-color;
+			}
+		}
+
+		.product-price,
+		.product-subtotal{
+			.amount{
+				color: $primary-color;
+			}
+		}
+	}
+
+
+	/**
+	 * Forms
+	 */
+
+	form {
+		.form-row {
+			.select2-container {
+				.select2-choice {
+					border-color: $border-color;
+				}
+			}
+		}
+	}
+
+	form.login,
+	form.checkout_coupon,
+	form.register {
+		border-color: $border-color;
+		background: #fff;
+	}
+
+	/**
+	 * Order page
+	 */
+	ul.order_details {
+		.total .amount{
+			color: $primary-color;
+		}
+	}
+}
+
+.arexworks-woocommerce-toolbar{
+	border-color: $border-color;
+	.gridlist-toggle-wrapper{
+		a{
+			border-color: $border-color;
+			&.active{
+				color: $primary-color;
+			}
+		}
+	}
+
+	.sort-by-wrapper{
+		.sort-by-label{
+			color: $secondary-color;
+		}
+		.sort-by-content{
+			border-color: $border-color;
+		}
+		&:hover{
+			.sort-by-label{
+				color: $primary-color;
+			}
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_category_product.scss
+.products{
+	.product_actions{
+		.button{
+			border-color: $border-color;
+			&:hover{
+				border-color: #fff;
+				background: #fff;
+				color: $secondary-color;
+			}
+		}
+	}
+	h3{
+		a{
+			color: $secondary-color;
+			&:hover{
+				color: $primary-color;
+			}
+		}
+	}
+	.product_list_price{
+		.amount{
+			color: $primary-color;
+		}
+		del{
+			.amount{
+				color: inherit;
+			}
+		}
+	}
+
+	&.products-grid{
+
+		.product-inner{
+			&:hover{
+				.product_images_wrapper{
+					.product_link{
+						background: $secondary-color;
+					}
+				}
+			}
+		}
+
+		.added_to_cart,
+		.add_to_cart_button{
+			background: none;
+			color: $body-font-color;
+			border-color: $border-color;
+			&:hover{
+				color: $secondary-color;
+				border-color: $secondary-color;
+			}
+		}
+	}
+	&.products-grid2{
+		h3{
+			a{
+				color: #fff;
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+
+		.product_images_wrapper{
+			.product_thumbnail{
+				&:before{
+					background: #1b1b1b;
+				}
+			}
+		}
+		.add_to_cart_button,
+		.added_to_cart{
+			color: #fff;
+			&:hover{
+				color: $primary-color;
+				border-color: $primary-color;
+			}
+		}
+		.product_actions_list{
+			.button{
+				border-color: $border-color;
+				&:hover{
+					border-color: #fff;
+					background: #fff;
+					color: $secondary-color;
+				}
+			}
+		}
+	}
+	&.products-list{
+		> li:not(.product-category){
+			+ li{
+				.product-inner{
+					border-top-color: $border-color;
+				}
+			}
+		}
+		.product_images_wrapper{
+			&:hover{
+				.product_link{
+					background: $secondary-color;
+				}
+			}
+		}
+		.product_actions_list{
+
+			.button{
+				border-color: $secondary-color;
+				color: $secondary-color;
+				background: none;
+				&:hover{
+					background: $primary-color;
+					color: #fff;
+					border-color: $primary-color;
+				}
+			}
+		}
+	}
+	&.products-list2{
+		.product_actions_list{
+			.button{
+				border-color: $secondary-color;
+				color: $secondary-color;
+				background: none;
+				&:hover{
+					background: $primary-color;
+					color: #fff;
+					border-color: $primary-color;
+				}
+			}
+		}
+
+		.product_images_wrapper{
+			&:hover{
+				.product_link{
+					background-color: $secondary-color;
+				}
+			}
+		}
+		.product_actions_images{
+			.active{
+				img{
+					border-color: $primary-color;
+				}
+			}
+		}
+	}
+	&.products-list-mini{
+
+		li.product{
+			.product_images_wrapper{
+				&:hover{
+					.product_link{
+						background-color: $secondary-color;
+					}
+				}
+			}
+			.product-item-info{
+
+				.product_actions_list{
+					border-top-color: $border-color;
+				}
+
+				.button{
+					background: none;
+					color: $body-font-color;
+					&:hover{
+						color: $primary-color;
+					}
+
+				}
+			}
+		}
+	}
+	li.product-category{
+		&:hover{
+			h3{
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+.wrapper-product-category.wrapper-product-category-list{
+	border-bottom-color: $border-color;
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_search_product.scss
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_single_product.scss
+.related-heading{
+	h2{
+		&:after{
+			background: $primary-color;
+		}
+	}
+}
+.summary.entry-summary{
+	.woocommerce-product-rating {
+		.star-rating + .woocommerce-review-link:before{
+			color: $body-font-color;
+		}
+	}
+	.price-box{
+		.price{
+			del{
+				.amount{
+					color: $body-font-color;
+				}
+			}
+
+			.amount{
+				color: $primary-color;
+			}
+		}
+	}
+	.single_add_to_cart_button{
+		background: $primary-color;
+		&:hover{
+			background: $secondary-color;
+		}
+	}
+
+	.single_variation{
+		.amount{
+			color: $primary-color;
+		}
+		del{
+			.amount{
+				color: $body-font-color;
+			}
+		}
+	}
+
+	.button-wrapper {
+
+		a{
+			border-color: $border-color;
+			&:hover{
+				border-color: $secondary-color;
+				background: $secondary-color;
+				color: #fff;
+			}
+		}
+
+	}
+	.group_table{
+		.price{
+			color: $primary-color;
+			del{
+				.amount{
+					color: $body-font-color;
+				}
+			}
+		}
+	}
+
+	.custom_html_service_bellow_add_cart .custom-icon-box{
+		li {
+			color: $heading-font-color;
+			> i{
+				border-color: $border-color;
+			}
+		}
+	}
+}
+.arexworks-single-product-sharing{
+	.share-links{
+		a{
+			&:hover{
+				color: $primary-color;
+			}
+		}
+	}
+}
+.woocommerce{
+	.variations_form.cart{
+		.variations{
+			td.label{
+				border-bottom-color: $border-color;
+			}
+		}
+	}
+}
+
+#woocommerce-tabs{
+	.resp-tabs-list{
+		li{
+			&:hover,
+			&.resp-tab-active{
+				color: $primary-color;
+			}
+		}
+	}
+	.resp-accordion{
+		border-color: $border-color;
+		color: $body-font-color;
+		&.resp-tab-active{
+			color: $primary-color;
+		}
+	}
+	.resp-tab-content{
+		border-color: $border-color;
+		background: #fff;
+	}
+}
+
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_cart.scss
+#header-mini-cart{
+	border-color: $border-color;
+	.widget_shopping_cart{
+		.total{
+			border-top-color: $border-color;
+		}
+		.buttons{
+			.button{
+				&:first-child{
+					background: $border-color;
+					color: $secondary-color;
+					&:hover{
+						background: $primary-color;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+.yith-woocompare-widget .empty,
+.widget_shopping_cart .empty{
+	border-color: $border-color;
+}
+
+.woocommerce{
+	.shop_table.cart{
+		thead{
+			tr{
+				border-color: $border-color;
+			}
+		}
+		tr{
+			border-color: $border-color;
+		}
+
+		.product-name a{
+			color: $secondary-color;
+		}
+		td.actions{
+			.button{
+				border-color: $secondary-color;
+				color: $secondary-color;
+				&:hover{
+					background: $primary-color;
+					border-color: $primary-color;
+					color: #fff;
+				}
+			}
+		}
+
+	}
+}
+.woocommerce-cart {
+	.coupon-box > h4,
+	.cart_totals > h4{
+		border-bottom-color: $border-color;
+	}
+
+	.coupon-box {
+		label{
+			font-family: $highlight-font-family;
+			color: $body-font-color;
+		}
+	}
+
+	.wc-proceed-to-checkout .button{
+		background: $primary-color;
+		&:hover{
+			background: $secondary-color;
+		}
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_checkout.scss
+.woocommerce-checkout{
+	.shop_table{
+		tr{
+			border-color: $border-color;
+		}
+
+		.amount{
+			color: $primary-color;
+		}
+	}
+}
+#place_order{
+	background: $primary-color;
+	&:hover{
+		background: $secondary-color;
+	}
+}
+form.woocommerce-checkout{
+	h3{
+		border-bottom-color: $border-color;
+	}
+}
+
+.woocommerce-checkout-payment{
+	ul{
+		li{
+			border-bottom-color: $border-color;
+		}
+	}
+}
+
+.woocommerce-order-received{
+	.woocommerce{
+		.section-before-cart {
+			+ p{
+				border-top-color: $border-color;
+			}
+		}
+		h2,h3{
+			border-bottom-color: $border-color;
+		}
+
+	}
+}
+// /Applications/AMPPS/www/choijun.local/wordpress/arw_leka/wp-content/themes/leka/assets/scss/layout/_my_account.scss
+.form-login-register{
+	h2{
+		font-family: $highlight-font-family;
+		color: $primary-color;
+	}
+}

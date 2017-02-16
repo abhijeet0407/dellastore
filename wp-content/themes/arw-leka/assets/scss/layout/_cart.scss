@@ -1,0 +1,204 @@
+#header-mini-cart{
+	right: 0;
+	left: auto !important;
+	border: 1px solid $border-color;
+	padding: rem-calc(20px 20px 10px);
+	margin-top: 0;
+	width: 290px;
+	min-width: 290px;
+	max-width: 290px !important;
+	-webkit-animation-duration: .2s;
+	animation-duration: .2s;
+	&.animated{
+		display: block;
+	}
+	&:before,
+	&:after{
+		display: none;
+	}
+	.widget_shopping_cart{
+		ul.cart_list{
+			max-height: rem-calc(255px);
+			overflow: scroll;
+			padding-right: rem-calc(15px);
+			margin-right: - rem-calc(15px);
+		}
+		li{
+			width: 100%;
+			+ li{
+				margin-top: rem-calc(20px);
+			}
+			&.empty{
+				margin-bottom: rem-calc(20px);
+				border: none;
+			}
+			a{
+				padding: 0;
+				img{
+					padding-top: 0;
+				}
+			}
+			a.remove{
+				position: static;
+				float: right;
+			}
+		}
+		.product_list_widget{
+			@include clearfix();
+		}
+		.total{
+			border-top: 2px solid $border-color;
+			padding-top: 2px;
+		}
+		.buttons{
+			.button{
+				color: #fff;
+				display: block;
+				width: 100%;
+				font-size: rem-calc(14px);
+				letter-spacing: 1px;
+				margin: rem-calc(0 0 10px);
+				&:first-child{
+					background: $border-color;
+					color: $secondary-color;
+					&:hover{
+						background: $primary-color;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+.yith-woocompare-widget .empty,
+.widget_shopping_cart .empty{
+	text-align: center;
+	width: 100%;
+	border: 1px solid $border-color;
+	padding: rem-calc(50px 0);
+	text-transform: uppercase;
+	font-size: rem-calc(10px);
+}
+
+.woocommerce{
+	.shop_table.cart{
+		margin-bottom: rem-calc(40px);
+		border: none;
+		thead{
+			tr{
+				border-width: 2px 0 2px 0;
+				border-style: solid;
+				border-color: $border-color;
+			}
+		}
+		th{
+			padding: rem-calc(13px 10px);
+		}
+		tr{
+			font-size: rem-calc(14px);
+		}
+		tr{
+			border-width: 0 0 1px 0;
+			border-style: solid;
+			border-color: $border-color;
+			> td{
+				padding: rem-calc(40px 0);
+			}
+		}
+		.product-thumbnail{
+			width: rem-calc(140px);
+			padding: rem-calc(40px);
+		}
+		.product-name a{
+			color: $secondary-color;
+			text-transform: uppercase;
+		}
+		td.actions{
+			padding: rem-calc(35px 0);
+			text-align: center;
+			.button{
+				border: 1px solid $secondary-color;
+				background: none;
+				color: $secondary-color;
+				line-height: rem-calc(20px);
+				padding: rem-calc(15px 40px);
+				font-size: rem-calc(14px);
+				letter-spacing: 1px;
+				@include single-transition();
+				&:hover{
+					background: $primary-color;
+					border-color: $primary-color;
+					color: #fff;
+				}
+			}
+			.button-clear-cart{
+				margin-left: rem-calc(10px);
+			}
+			.button-continue-shopping{
+				float: left;
+			}
+		}
+
+	}
+}
+.woocommerce-cart {
+
+	.coupon-box > h4,
+	.cart_totals > h4{
+		text-transform: uppercase;
+		font-size: rem-calc(14px);
+		border-bottom: 1px solid $border-color;
+		letter-spacing: 1px;
+		padding-bottom: rem-calc(15px);
+		margin-bottom: rem-calc(15px);
+	}
+
+	.coupon-box {
+		margin-bottom: rem-calc(30px);
+		#coupon_code_duplicate{
+			line-height: rem-calc(20px);
+			font-size: rem-calc(12px);
+		}
+		#coupon_button_submit_duplicate{
+			line-height: rem-calc(20px);
+			font-size: rem-calc(11px);
+			padding: rem-calc(8px 20px);
+			letter-spacing: 1px;
+		}
+		label{
+			margin-bottom: rem-calc(20px);
+			font-size: 18px;
+			font-family: $highlight-font-family;
+			font-style: italic;
+			color: $body-font-color;
+		}
+	}
+
+	.wc-proceed-to-checkout .button{
+		margin-top: rem-calc(20px);
+		float: right;
+		line-height: rem-calc(20px);
+		letter-spacing: 2px;
+		font-size: rem-calc(14px);
+		padding: rem-calc(15px 40px);
+		background: $primary-color;
+		&:hover{
+			background: $secondary-color;
+		}
+	}
+}
+.entry-content > .woocommerce > .cart-empty,
+.entry-content > .woocommerce > .return-to-shop{
+	text-align: center;
+}
+.entry-content > .woocommerce > .cart-empty{
+	font-size: rem-calc(20px);
+}
+.entry-content > .woocommerce > .return-to-shop .button{
+	font-size: 1.23077rem;
+	padding-bottom: 1.30769rem;
+	padding-left: 2.46154rem;
+	padding-right: 2.46154rem;
+	padding-top: 1.23077rem;
+}

@@ -1,0 +1,90 @@
+.overlay-top-search {
+	background: rgba(255, 255, 255, 0.9);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	@include single-transition();
+	&.open{
+		opacity: 1;
+		visibility: visible;
+	}
+	.overlay-close-search {
+		background: url("../images/cross.png") no-repeat center center;
+		border: medium none;
+		color: transparent;
+		height: 80px;
+		outline: medium none;
+		overflow: hidden;
+		position: absolute;
+		right: 20px;
+		text-indent: 200%;
+		top: 20px;
+		width: 80px;
+		z-index: 100;
+	}
+	.site-search-inner {
+		height: 60%;
+		position: relative;
+		text-align: center;
+		top: 50%;
+		@include translate2d(0,-50%);
+	}
+	label{
+		display: none;
+	}
+	input{
+		display: none;
+	}
+	input[type="text"],
+	input[type="search"]{
+		display: inline-block;
+		width: 80%;
+		margin: 0 auto;
+		min-width: 200px;
+		max-width: 600px;
+		border-width: 0 0 2px;
+		border-style: solid;
+		border-color: $primary-color;
+		color: $primary-color;
+		font-size: rem-calc(40px);
+		background: none;
+		height: auto;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+	input[type="submit"]{
+		background: url(../images/icon-search.png) no-repeat 0 0;
+		border: medium none;
+		display: inline-block;
+		padding: 0;
+		text-indent: -9999em;
+		width: 50px;
+		height: 50px;
+	}
+	::-webkit-input-placeholder {
+		color: $primary-color;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: $primary-color;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: $primary-color;
+	}
+
+	:-ms-input-placeholder {
+		color: $primary-color;
+	}
+}
+.post-list-item{
+	&.post-item-search{
+		padding-bottom: rem-calc(10px);
+		margin-bottom: rem-calc(30px);
+	}
+}

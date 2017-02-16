@@ -1,0 +1,31 @@
+.header-layout-1{
+	.site-header{
+		.header-left{
+
+		}
+		.site-logo{
+			text-align: center;
+			padding-bottom: rem-calc(48px);
+			padding-top: rem-calc(60px);
+		}
+		.header-actions{
+			position: absolute;
+			top: 0;
+			#{$right}: rem-calc(15px);
+		}
+		.header-main{
+			.header-right{
+				position: relative;
+				border-bottom: 1px solid $border-color;
+			}
+		}
+		.main-menu{
+			text-align: center;
+			> .menu-item{
+				float: none;
+				display: inline-block;
+				margin: 0;
+			}
+		}
+	}
+}

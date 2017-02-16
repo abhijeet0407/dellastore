@@ -1,0 +1,109 @@
+.page-style-boxed{
+	background: #eaeaea;
+	#page_wrapper{
+		max-width: $row-width;
+		margin: 0 auto;
+		background: #f3f3f3;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.176);
+		-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.176);
+	}
+	.vc_row[data-vc-full-width="true"] {
+		left: rem-calc(15px) !important;
+		max-width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+.page-style-full-width{
+	.row{
+		max-width: none;
+	}
+//	&.site-layout-col-1c{
+//		.site-content-inner > .entry-content > .vc_row{
+//			margin-left: 0;
+//			margin-right: 0;
+//		}
+//	}
+}
+.body-wrapper{
+	min-height: 100%;
+	min-height: 100vh;
+}
+#page_wrapper{
+	position: relative;
+	> .main{
+		padding-top: rem-calc(90px);
+		.woocommerce-checkout &,
+		.woocommerce-cart & {
+			padding-top: rem-calc(50px);
+		}
+	}
+}
+.header-layout-4{
+	&.page-style-boxed{
+		.body-wrapper-inner{
+			position: relative;
+		}
+		#page_wrapper{
+			position: static;
+		}
+	}
+}
+.page-header-wrapper{
+	background: url(../images/bg-page-header-default.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+.page-header-layout-1{
+	.page-header-wrapper{
+		text-align: center;
+		padding: rem-calc(170px 0);
+	}
+	.page_header_title{
+		margin-bottom: rem-calc(20px);
+		h1{
+			font-size: rem-calc(36px);
+			text-transform: uppercase;
+			margin: 0;
+			color: #fff;
+			display: inline-block;
+			padding: rem-calc(30px 50px);
+			letter-spacing: 1px;
+			border: 1px solid transparentize(#fff,0.7);
+		}
+	}
+	.page_header_breadcrumbs{
+		.breadcrumb{
+			margin: 0;
+			list-style: none;
+			li{
+				display: inline-block;
+				font-size: rem-calc(14px);
+				text-transform: uppercase;
+				color: #fff;
+			}
+			a{
+				color: inherit;
+			}
+			.delimiter{
+				&:before{
+					content: "\f105";
+					font-family: FontAwesome;
+					font-style: normal;
+					padding: rem-calc(0 20px);
+				}
+			}
+		}
+	}
+}
+
+.header-layout-3{
+	#page_wrapper{
+		position: static;
+		.header-side-nav + .main{
+			padding-top: 0;
+		}
+		> * {
+			padding-left: rem-calc(370px);
+		}
+	}
+}

@@ -1,0 +1,188 @@
+/*
+	Footer
+*/
+.hide-footer-layout{
+	.footer-wrapper{
+		display: none;
+	}
+}
+/*--------------------------------------------------------------
+	6.1 Footer Layout 1
+---------------------------------------------------------------*/
+.footer-layout-1 #site-footer{
+	background: #1f1f1f;
+	.widget{
+		@include clearfix();
+	}
+	.columns:first-child{
+		.widget_text{
+			color: #4b4a4a;
+		}
+	}
+	.widget-title{
+		font-family: inherit;
+		color: $primary-color;
+		font-weight: normal;
+		letter-spacing: 1px;
+		font-size: rem-calc(14px);
+		text-transform: uppercase;
+		padding-top: 0;
+		margin-bottom: rem-calc(10px);
+		&:before,
+		&:empty{
+			display: none;
+		}
+		&:after{
+			width: rem-calc(30px);
+			border-top: 1px solid #3a3a3a;
+			content: "";
+			display: block;
+			margin-top: rem-calc(5px);
+		}
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		font-size: inherit;
+		ul{
+			display: none;
+		}
+		li{
+			margin-bottom: rem-calc(2px);
+			border: none;
+			padding-left: 0;
+		}
+		.control-menu-toggle-widget{
+			display: none;
+		}
+	}
+	.arexworks-social{
+		li{
+			margin-bottom: 0;
+			+ li{
+				margin-left: rem-calc(20px);
+			}
+		}
+	}
+	.wpb_content_element{
+		margin-bottom: rem-calc(20px);
+	}
+	ul.menu{
+		li{
+			text-transform: uppercase;
+			font-size: rem-calc(10px);
+		}
+	}
+	.payment_methods{
+		text-align: right;
+		img{
+			margin-left: rem-calc(10px);
+			max-height: rem-calc(34px);
+		}
+	}
+	.site-footer-first-widget-area-content{
+		padding: rem-calc(80px 0 40px);
+	}
+
+	.site-footer-copyright-area{
+		.site-footer-content{
+			padding: rem-calc(32px 0);
+		}
+		.copyright_text{
+			padding-top: rem-calc(5px);
+			text-transform: uppercase;
+			font-size: rem-calc(11px);
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+	}
+
+	.nsu_widget {
+		.nsu-form {
+			float: left;
+			width: 100%;
+			margin-top: rem-calc(10px);
+			.nsu-field{
+				border-color: #262626;
+				background: #262626;
+				padding: rem-calc(10px 60px);
+			}
+			p:last-child{
+				right: rem-calc(60px);
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+	.footer_socials_wrapper{
+		margin-top: rem-calc(15px);
+		margin-bottom: rem-calc(30px);
+		&:before{
+			border-top: 2px solid;
+			content: "";
+			display: block;
+			padding-bottom: rem-calc(20px);
+			width: rem-calc(180px);
+		}
+		li{
+			display: inline-block;
+			font-size: rem-calc(25);
+			margin-right: rem-calc(30px);
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+	6.1 Footer Layout 2
+---------------------------------------------------------------*/
+.footer-layout-2 #site-footer{
+	color: $secondary-color;
+	font-size: rem-calc(11px);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: rem-calc(30px 0);
+	ul{
+		list-style: none;
+		margin: 0;
+		li:last-child{
+			padding-right: 0;
+			margin-right: 0;
+		}
+	}
+	.footer-right{
+		text-align: right;
+	}
+	.copyright_text,
+	.widget{
+		margin-bottom: rem-calc(30px);
+	}
+	.wpb_content_element{
+		margin-bottom: 0;
+	}
+	.copyright_text{
+		color: #c9c9c9;
+		a{
+			color: inherit;
+			&:hover{
+				color: $primary-color;
+			}
+		}
+	}
+	.payment_methods{
+		img{
+			max-height: rem-calc(25px);
+		}
+	}
+	.nsu_widget {
+		.nsu-form {
+			.nsu-field{
+				padding: rem-calc(10px 80px);
+			}
+			p:last-child{
+				right: rem-calc(80px);
+			}
+		}
+	}
+}

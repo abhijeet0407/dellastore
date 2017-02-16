@@ -1,0 +1,123 @@
+.entry-content-404{
+	padding: rem-calc(100px 0);
+	.medium-6 + .medium-6{
+		margin-top: rem-calc(60px);
+	}
+	h1{
+		font-size: rem-calc(235px);
+	}
+	h3{
+		font-size: rem-calc(24px);
+	}
+	p{
+		font-size: rem-calc(24px);
+		margin-bottom: rem-calc(40px);
+		line-height: normal;
+		.button{
+			margin-bottom: 0;
+			min-width: rem-calc(200px);
+			line-height: rem-calc(74px);
+			padding-top: 0;
+			padding-bottom: 0;
+			font-size: rem-calc(18px);
+			i{
+				color: $primary-color;
+				font-size: rem-calc(30px);
+				position: relative;
+				top: 3px;
+				padding-right: 10px;
+			}
+			&:hover{
+				i{
+					color: inherit;
+				}
+			}
+		}
+	}
+	.search-form{
+		label{
+			display: none;
+		}
+		.search-field{
+			background: none;
+			border-width: 2px 0 2px 2px;
+			line-height: rem-calc(60px);
+			height: rem-calc(64px);
+			margin-bottom: 0;
+			display: inline-block;
+			float: left;
+			width: 70%;
+			width: calc( 100% - 80px );
+			width: -webkit-calc( 100% - 80px );
+			max-width: 300px;
+		}
+		.search-submit{
+			width: rem-calc(64px);
+			height: rem-calc(64px);
+			line-height: rem-calc(64px);
+			margin-bottom: 0;
+			text-indent: -999em;
+			background: $primary-color;
+			padding: 0;
+			font-size: rem-calc(18px);
+			overflow: hidden;
+			display: inline-block;
+			&:before{
+				content: "\f002";
+				font-family: FontAwesome;
+				text-indent: 0;
+				display: block;
+			}
+		}
+	}
+}
+.contact-information{
+	list-style: none;
+	font-size: rem-calc(16px);
+	margin-left: 0;
+	li{
+		margin-bottom: rem-calc(15px);
+	}
+	i{
+		color: $primary-color;
+		width: rem-calc(20px);
+		margin-right: rem-calc(10px);
+	}
+}
+.wrapper-contact-form{
+	label{
+		font-size: rem-calc(18px);
+		margin-bottom: rem-calc(25px);
+		color: inherit;
+	}
+	.wpcf7-form-control{
+		margin-bottom: rem-calc(30px);
+		+ span{
+			margin-top: - rem-calc(25px);
+		}
+	}
+	.wpcf7-text{
+		border-width: 2px;
+		height: rem-calc(64px);
+		line-height: rem-calc(60px);
+		padding: rem-calc(0 15px);
+		background: none;
+		font-size: rem-calc(16px);
+	}
+	.wpcf7-textarea{
+		border-width: 2px;
+		background: none;
+		font-size: rem-calc(16px);
+		&:focus{
+			background: #fafafa;
+		}
+	}
+}
+.woocommerce.woocommerce-yith-compare{
+	h1{
+		text-transform: uppercase;
+		font-size: 20px;
+		letter-spacing: 1px;
+		color: #fff;
+	}
+}
