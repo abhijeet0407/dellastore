@@ -8,6 +8,7 @@ img.pro-notice{
     cursor: pointer;
 }
 
+.select2-results{ max-height: 250px !important; }
 
 .wcdc-add-container {
     display: none;
