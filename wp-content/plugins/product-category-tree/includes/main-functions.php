@@ -29,7 +29,7 @@ if (!function_exists('wcdc_action_enqueue_adminPluginPage_assets')) {
 
         wp_register_script('WCDC-select2', WCDC_PLUGIN_URL . '/assets/js/select2.min.js');
         wp_enqueue_script('WCDC-select2');
-        
+
         wp_localize_script('WCDC-cuctomScript', 'wcdc_ajaxScript', array('ajax_url' => admin_url('admin-ajax.php')));
     }
 
@@ -206,7 +206,7 @@ if (!function_exists('wcdc_fun_togi_woo_categories')) {
                                 </div>
                                 <div class="form-field term-parent-wrap">
                                     <label for="parent"><?php _e('Parent', 'wc-disable-categories'); ?></label>
-                                    <select class="postform" id="parent" name="parent">
+                                    <select class="postform js-example-basic-single" id="parent" name="parent">
                                         <option value="0"><?php _e('None', 'wc-disable-categories'); ?></option>
                                         <?php
                                         $terms = get_terms('product_cat', array('hide_empty' => 0, 'hierarchical' => true));
@@ -231,6 +231,11 @@ if (!function_exists('wcdc_fun_togi_woo_categories')) {
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                 $(".js-example-basic-single").select2();
+            });
+        </script>
         <?php
     }
 
