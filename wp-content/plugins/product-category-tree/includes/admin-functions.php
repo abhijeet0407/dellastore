@@ -10,7 +10,7 @@ if (!function_exists('wcdc_register_disable_cat_page')) {
 
     function wcdc_register_disable_cat_page() {
         //add_submenu_page('TogiData Woo Categories', 'TogiData Woo Categories', 10, 'togi_woo_categories', 'togi_woo_categories','dashicons-networking');
-        add_submenu_page('edit.php?post_type=product', __('Category Tree', "wc-disable-categories"), __('Category Tree', "wc-disable-categories"), 'manage_options', 'togi_woo_categories', 'wcdc_fun_togi_woo_categories');
+        add_submenu_page('edit.php?post_type=product', __('Category Tree', "wc-disable-categories"), __('Category Tree', "wc-disable-categories"), 'manage_product_terms', 'togi_woo_categories', 'wcdc_fun_togi_woo_categories');
     }
 
 }
