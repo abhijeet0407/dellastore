@@ -11,11 +11,9 @@ php_value upload_max_filesize 12M
 php_value post_max_size 12M
 </IfModule>
 
-<<<<<<< HEAD
-=======
+
 php_value upload_max_filesize 12M
 php_value post_max_size 12M
 
->>>>>>> 2caa4d8394fdc4c772fe0e114bb59b865ff8470c
 
 # END WordPress

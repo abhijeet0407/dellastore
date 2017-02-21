@@ -37,9 +37,11 @@ add_filter('arexworks_filter_get_options_layout',function($layout){
 					$url = wp_upload_dir();
 					//echo $url['baseurl'].'/'.$thumbnail_img[0]->meta_value;
 					?>					
-						<div class="col-sm-6 col-md-4 col-lg-4">
-							<img src="<?php echo $url['baseurl'].'/'.$thumbnail_img[0]->meta_value;?>" class="img-responsive" alt="Image">
-							<h3><?php echo $product_name; ?></h3>
+						<div class="col-sm-6 col-md-4 col-lg-4" style="padding:10px;">
+							<div style="background: url(<?php echo $url['baseurl'].'/'.$thumbnail_img[0]->meta_value;?>); height:232px; background-size:cover; background-repeat:no-repeat;">
+								<!-- <img src="<?php echo $url['baseurl'].'/'.$thumbnail_img[0]->meta_value;?>" class="img-responsive" alt="Image"> -->
+								<h3 style="background: #ddd;"><?php echo $product_name; ?></h3>
+							</div>	
 						</div>	
 			<?php	}		
 			}
