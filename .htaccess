@@ -9,4 +9,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /dellastore/index.php [L]
 </IfModule>
 
+php_value upload_max_filesize 12M
+php_value post_max_size 12M
+
+
 # END WordPress

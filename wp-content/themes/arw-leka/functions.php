@@ -2,6 +2,11 @@
 /**
  * Define variables
  */
+ 
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
+
 defined( 'arexworks_theme_dir' )        or   define( 'arexworks_theme_dir',          get_template_directory() );
 defined( 'arexworks_theme_uri' )        or   define( 'arexworks_theme_uri',          get_template_directory_uri() );
 defined( 'arexworks_include_dir' )      or   define( 'arexworks_include_dir',        arexworks_theme_dir . '/includes' );
