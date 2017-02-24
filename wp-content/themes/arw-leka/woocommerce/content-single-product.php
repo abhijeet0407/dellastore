@@ -29,7 +29,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 }
 ?>
 <?php
-$class_essential_media = 'large-5 medium-6 columns';
+//$class_essential_media = 'large-5 medium-6 columns';
+$class_essential_media = 'large-12 medium-6 columns';
 $class_essential_detail = 'large-7 medium-6 columns';
 $class_essential_sidebar = '';
 $show_essential_sidebar = false;
@@ -63,6 +64,7 @@ if(arexworks_get_option_data('enable_sidebar_collateral') && is_active_sidebar('
                 do_action( 'woocommerce_before_single_product_summary' );
                 ?>
             </div>
+			<br><hr class="product_hr />
         </div>
         <div class="<?php echo esc_attr($class_essential_detail);?>">
             <div class="summary entry-summary">
@@ -97,14 +99,7 @@ if(arexworks_get_option_data('enable_sidebar_collateral') && is_active_sidebar('
     </div>
     <div class="product-collateral">
         <?php remove_action('woocommerce_after_single_product_summary','woocommerce_output_product_data_tabs',10);?>
-        <div class="row">
-            <div class="<?php echo esc_attr($class_collateral_tab)?>"><?php echo woocommerce_output_product_data_tabs();?></div>
-            <?php if($show_collateral_sidebar):?>
-            <div class="<?php echo esc_attr($class_collateral_sidebar)?>">
-                <?php if(is_active_sidebar('sidebar-collateral')) { dynamic_sidebar('sidebar-collateral'); }?>
-            </div>
-            <?php endif;?>
-        </div>
+		<br><hr class="product_hr" />
 	<?php
 		/**
 		 * woocommerce_after_single_product_summary hook
@@ -117,6 +112,15 @@ if(arexworks_get_option_data('enable_sidebar_collateral') && is_active_sidebar('
 	?>
     </div>
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
+		<br><hr class="product_hr" />
+        <div class="row">
+            <div class="<?php echo esc_attr($class_collateral_tab)?>"><?php echo woocommerce_output_product_data_tabs();?></div>
+            <?php if($show_collateral_sidebar):?>
+            <div class="<?php echo esc_attr($class_collateral_sidebar)?>">
+                <?php if(is_active_sidebar('sidebar-collateral')) { dynamic_sidebar('sidebar-collateral'); }?>
+            </div>
+            <?php endif;?>
+        </div>
 
 </div><!-- #product-<?php the_ID(); ?> -->
 

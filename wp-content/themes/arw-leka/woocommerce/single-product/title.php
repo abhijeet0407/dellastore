@@ -12,4 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<h2 itemprop="name" class="product_title entry-title"><span class="product-title-link"><?php the_title(); ?></span></h2>
+<!--<h2 itemprop="name" class="product_title entry-title"><span class="product-title-link"><?php the_title(); ?></span></h2>-->
+<span itemprop="name" class="product_title entry-title"><span class="product-title-link"><?php the_title(); ?></span></h2>
+

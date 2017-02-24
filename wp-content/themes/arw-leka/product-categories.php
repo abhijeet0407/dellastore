@@ -24,9 +24,10 @@ add_filter('arexworks_filter_get_options_layout',function($layout){
 				//print_r($result);
 				if(count(maybe_unserialize($result->meta_value))>0){
 					//echo $result->post_id.'<br/>';
-					$product_names = $wpdb->get_results( "SELECT post_title FROM delstore_posts WHERE id = ".$result->post_id, OBJECT );
+					$product_names = $wpdb->get_results( "SELECT post_title, post_name FROM delstore_posts WHERE id = ".$result->post_id, OBJECT );
 					
 					$product_name = $product_names[0]->post_title;	
+					$product_url = $product_names[0]->post_name;	
 					
 					$thumbnail_img_id = $wpdb->get_results( "SELECT meta_value FROM delstore_postmeta WHERE meta_key = '_thumbnail_id' AND post_id = ".$result->post_id, OBJECT );
 					//echo $thumbnail_img_id[0]->meta_value; 
@@ -40,8 +41,8 @@ add_filter('arexworks_filter_get_options_layout',function($layout){
 						<div class="col-sm-6 col-md-4 col-lg-4" style="padding:10px;">
 							<div style="background: url(<?php echo $url['baseurl'].'/'.$thumbnail_img[0]->meta_value;?>); height:232px; background-size:cover; background-repeat:no-repeat;">
 								<!-- <img src="<?php echo $url['baseurl'].'/'.$thumbnail_img[0]->meta_value;?>" class="img-responsive" alt="Image"> -->
-								<h3 style="background: #ddd;"><?php echo $product_name; ?></h3>
 							</div>	
+							<a class="product_url" href="<?php echo site_url().'/product/'.$product_url ;?>"><h3 style="background: #ddd;"><?php echo $product_name; ?></h3> </a>
 						</div>	
 			<?php	}		
 			}
@@ -51,24 +52,4 @@ add_filter('arexworks_filter_get_options_layout',function($layout){
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<!--
-	<div class="container text-center">
-		<h3>What We Do</h3> <br>
-		<div class="row">
-			<div class="col-sm-6 col-md-4 col-lg-4">
-				<img src="http://localhost/dellastore/wp-content/uploads/2017/02/Screen-Shot-2017-02-18-at-7.41.51-PM-1.png" class="img-responsive" alt="Image">
-				<p>Current Project</p>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-4">
-				<img src="http://localhost/dellastore/wp-content/uploads/2017/02/Screen-Shot-2017-02-18-at-7.40.35-PM.png" class="img-responsive" alt="Image">
-				<p>Project 2</p>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-4">
-				<img src="http://localhost/dellastore/wp-content/uploads/2017/02/Screen-Shot-2017-02-18-at-7.42.34-PM.png" class="img-responsive" alt="Image">
-				<p>Project 2</p>
-			</div>
-			
-			<div class="clearfix"></div>
-		</div>
-	</div>-->
 <?php get_footer();?>

@@ -36,7 +36,7 @@ $image       				= get_the_post_thumbnail( $post->ID,
 $attachment_count   		= count( $product->get_gallery_attachment_ids() );
 ?>
 
-<div id="main_product_single_image">
+<div id="main_product_single_image" >
 
     <?php if ( has_post_thumbnail() ) { ?>
 
