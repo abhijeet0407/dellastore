@@ -81,7 +81,7 @@ if ( $products->have_posts() ) : ?>
 <div class="woo_related_products">
     <div class="row">
         <div class="large-centered columns carousel-control-style-2">
-            <div class="related-heading"><h2><?php esc_html_e( 'Related Products', 'arw-leka' ); ?></h2></div>
+            <div class="related-heading"><h2><?php esc_html_e( 'Individual Products', 'arw-leka' ); ?></h2></div>
             <div data-slider_config="<?php echo esc_attr(json_encode($slide_config));?>" id="related-products-carousel" class="arexworks-slick-slider related products products-grid product-carousel">
                 <?php while ( $products->have_posts() ) : $products->the_post(); ?>
                     <ul class="slick-inner-item"><?php wc_get_template_part( 'content', 'product' ); ?></ul>

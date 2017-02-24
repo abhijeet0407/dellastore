@@ -17,7 +17,8 @@ add_filter('arexworks_filter_get_options_layout',function($layout){
 	<?php 
 	
 		global $wpdb;				 
-		$results = $wpdb->get_results( "SELECT * FROM delstore_postmeta WHERE meta_key = '_crosssell_ids' AND meta_value != ''", OBJECT );
+		//$results = $wpdb->get_results( "SELECT * FROM delstore_postmeta WHERE meta_key = '_crosssell_ids' AND meta_value != ''", OBJECT );
+		$results = $wpdb->get_results( "SELECT * FROM delstore_postmeta WHERE meta_key = '_related_ids' AND meta_value != ''", OBJECT );
 		//echo '<pre>';
 			//print_r($results); 
 			foreach($results as $result){

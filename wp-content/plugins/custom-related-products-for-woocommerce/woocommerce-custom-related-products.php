@@ -15,7 +15,7 @@ function crp_select_related_products() {
 	?>
 	<div class="options_group">
 		<?php if ( $woocommerce->version >= '2.3' ) : ?>
-			<p class="form-field"><label for="related_ids"><?php _e( 'Related Products', 'woocommerce' ); ?></label>
+			<p class="form-field"><label for="related_ids"><?php _e( 'Individual Products', 'woocommerce' ); ?></label>
 				<input type="hidden" class="wc-product-search" style="width: 50%;" id="related_ids" name="related_ids" data-placeholder="<?php _e( 'Search for a product&hellip;', 'woocommerce' ); ?>" data-action="woocommerce_json_search_products" data-multiple="true" data-selected="<?php
 					$json_ids = array();
 					foreach ( $product_ids as $product_id ) {
